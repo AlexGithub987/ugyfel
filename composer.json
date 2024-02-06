@@ -11,9 +11,6 @@
     ],
     "homepage": "https://github.com/alexgithub987/ugyfel",
     "keywords": ["Laravel", "Ugyfel"],
-    "require": {
-        "illuminate/support": "~9"
-    },
     "require-dev": {
         "phpunit/phpunit": "~9.0",
         "orchestra/testbench": "~7"
