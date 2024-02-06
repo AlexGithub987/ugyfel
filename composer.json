@@ -37,5 +37,6 @@
                 "Ugyfel": "AlexGithub987\\Ugyfel\\Facades\\Ugyfel"
             }
         }
-    }
+    },
+    "minimum-stability": "stable"
 }
