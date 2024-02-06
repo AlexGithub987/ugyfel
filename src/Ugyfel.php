@@ -7,6 +7,6 @@ class Ugyfel
     // Build wonderful things
     public static function hello()
     {
-        return 'Hello, World!';
+        return 'Hello, World! test';
     }   
 }
