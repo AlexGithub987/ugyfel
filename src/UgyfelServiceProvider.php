@@ -61,22 +61,5 @@ class UgyfelServiceProvider extends ServiceProvider
             __DIR__.'/../config/ugyfel.php' => config_path('ugyfel.php'),
         ], 'ugyfel.config');
 
-        // Publishing the views.
-        /*$this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/alexgithub987'),
-        ], 'ugyfel.views');*/
-
-        // Publishing assets.
-        /*$this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/alexgithub987'),
-        ], 'ugyfel.assets');*/
-
-        // Publishing the translation files.
-        /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/alexgithub987'),
-        ], 'ugyfel.lang');*/
-
-        // Registering package commands.
-        // $this->commands([]);
     }
 }

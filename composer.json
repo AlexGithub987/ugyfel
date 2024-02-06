@@ -29,10 +29,7 @@
         "laravel": {
             "providers": [
                 "AlexGithub987\\Ugyfel\\UgyfelServiceProvider"
-            ],
-            "aliases": {
-                "Ugyfel": "AlexGithub987\\Ugyfel\\Facades\\Ugyfel"
-            }
+            ]
         }
     },
     "minimum-stability": "dev"
