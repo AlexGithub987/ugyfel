@@ -5,21 +5,26 @@ namespace AlexGithub987\Ugyfel;
 use AlexGithub987\Ugyfel\Models\Companies;
 use AlexGithub987\Ugyfel\Models\Ugyfel as ModelsUgyfel;
 use AlexGithub987\Ugyfel\Models\Ugyfel_cim as ModelsUgyfel_cim;
-use AlexGithub987\Ugyfel\Models\Ugyfel_kapcsolat as ModlesUgyfel_kapcsolat ;
-use Illuminate\Support\Facades\DB;
+use AlexGithub987\Ugyfel\Models\Ugyfel_kapcsolat as ModlesUgyfel_kapcsolat;
 
 class Ugyfel
 {
     // Build wonderful things
     public function hello()
     {
-        return 'Hello, World! test';
+        return 'Hello, World!';
     } 
     
-    public function index($request, $ugyfel_tipus) {
+    public function index($request) {
 
+        if ( $request['adoszam'] ) {       
+            $ugyfel_tipus = 'JOGISZEMELY';    
+        } else {
+            $ugyfel_tipus = 'MAGANSZEMELY';
+        }
 
         $company_id = Companies::select('*')->first()['id'];
+
         // ügyflél keresés típus szerint
         if ($ugyfel_tipus == 'JOGISZEMELY') {
             if (!isset($request['ceg']) or !isset($request['adoszam'])) {
