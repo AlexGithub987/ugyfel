@@ -17,6 +17,7 @@ composer require alexgithub987/ugyfel
 
 ## Usage
 
+```bash
  $data_array = [
    "nev" => "Dezső Miskolc", 
    "email" => "mjeszt@dezsomiskolc.hu", 
@@ -35,7 +36,7 @@ composer require alexgithub987/ugyfel
 
 $ugyfel = new Ugyfel;
 $ugyfel->index($data_array);
-
+```
 
 ## Change log
 
